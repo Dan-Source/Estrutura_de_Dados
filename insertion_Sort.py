@@ -12,30 +12,31 @@ def insertionSort(arr):
 
 arr = [2, 5, 30, 15, 7, 20]
 
-
-
 insertionSort(arr)
-
-for i in range(len(arr)): 
-    print ("% d" % arr[i])
+print(arr)
 
 
-# Testando com o lista com 1M de elementos
+# Testando com o lista com 1000000 de elementos
 import random
 import timeit
 def gerarLista(n):
     arr = []
     for i in range(n):
-        elemento = random.randrange(n)
+        elemento = random.randrange(100)
         arr.append(elemento)
     
     return arr
 
-
-arr = gerarLista(1000000)
+arr = gerarLista(100000)
+print(arr)
 start = timeit.timeit()
 insertionSort(arr)
 end = timeit.timeit()
-
+print(arr)
 print("{} Tamanho do Array ".format(len(arr)))
 print ("{} sec Tempo de Ordenação do InsertionSort".format(end - start))
+
+#output
+
+# 100000 Tamanho do Array 
+# -0.008046311002544826 sec Tempo de Ordenação do InsertionSort
