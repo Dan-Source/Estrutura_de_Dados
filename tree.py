@@ -28,13 +28,14 @@ class Tree:
             self.printInorder(node.left)
             print(node.data)
             self.printInorder(node.right)
+            
 
 def main():
     testTree = Tree()
-    testTree.addNode(testTree.root, 200)
-    testTree.addNode(testTree.root, 300)
-    testTree.addNode(testTree.root, 100)
-    testTree.addNode(testTree.root, 30)
+    testTree.addNode(testTree.root, 10)
+    testTree.addNode(testTree.root, 15)
+    testTree.addNode(testTree.root, 15)
+    testTree.addNode(testTree.root, 15)
     testTree.printInorder(testTree.root)
 
 main()
