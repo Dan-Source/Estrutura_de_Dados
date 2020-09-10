@@ -53,9 +53,7 @@ class Arvore:
             n = n.direita
         print(str(n.data) + " maior numero da arvore")
 
-    def remover(){
-        pass
-    }
+
 def main():
     import random
 
